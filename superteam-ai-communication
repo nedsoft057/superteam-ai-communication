@@ -1,0 +1,17 @@
+superteam-ai-communication/  
+├── backend/  
+│   ├── main.py                  # FastAPI server  
+│   ├── telegram_bot.py          # Telegram RAG bot  
+│   ├── member_search.py         # Member finder logic  
+│   ├── twitter_assistant.py     # Tweet generator  
+│   └── requirements.txt         # Python dependencies  
+├── frontend/  
+│   ├── src/  
+│   │   ├── components/          # React UI components  
+│   │   └── App.jsx              # Main Admin UI  
+│   └── Dockerfile  
+├── models/  
+│   └── llama-2-7b.Q4_K_M.gguf   # Local LLM (download link in README)  
+├── docker-compose.yml           # One-click deployment  
+├── README.md                    # Setup guide  
+└── locustfile.py                # Load testing script  
