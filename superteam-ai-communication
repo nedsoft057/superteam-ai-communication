@@ -1,17 +1,42 @@
-superteam-ai-communication/  
-├── backend/  
-│   ├── main.py                  # FastAPI server  
-│   ├── telegram_bot.py          # Telegram RAG bot  
-│   ├── member_search.py         # Member finder logic  
-│   ├── twitter_assistant.py     # Tweet generator  
-│   └── requirements.txt         # Python dependencies  
-├── frontend/  
-│   ├── src/  
-│   │   ├── components/          # React UI components  
-│   │   └── App.jsx              # Main Admin UI  
-│   └── Dockerfile  
-├── models/  
-│   └── llama-2-7b.Q4_K_M.gguf   # Local LLM (download link in README)  
-├── docker-compose.yml           # One-click deployment  
-├── README.md                    # Setup guide  
-└── locustfile.py                # Load testing script  
+superteam-ai-communication/
+├── .gitignore
+├── README.md
+├── docker-compose.yml
+├── .env.example
+├── locustfile.py
+│
+├── backend/
+│   ├── main.py
+│   ├── telegram_bot.py
+│   ├── member_search.py
+│   ├── twitter_assistant.py
+│   ├── rag.py
+│   ├── auth.py
+│   ├── database.py
+│   ├── requirements.txt
+│   └── Dockerfile
+│
+├── frontend/
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── DocumentUpload.jsx
+│   │   │   ├── MemberSearch.jsx
+│   │   │   └── Navbar.jsx
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── App.css
+│   ├── package.json
+│   ├── Dockerfile
+│   └── tailwind.config.js
+│
+├── models/
+│   └── (empty - add llama-2-7b.Q4_K_M.gguf later)
+│
+├── docs/
+│   ├── architecture.png
+│   └── demo-screenshot.png
+│
+└── nginx/
+    └── nginx.conf
